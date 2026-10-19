@@ -8,6 +8,7 @@
 
 # ===== BAGIAN 1: variabel dan direktori tujuan =====
 NIM=$(cat "$(dirname "$0")/../nim.txt")   # baca NIM dari nim.txt di folder repo
+SRC_DIR="$HOME/data_$NIM"            # direktori sumber (tempat file .txt)
 BACKUP_DIR="$HOME/backup_$NIM"       # direktori tujuan backup
 LOG_FILE="$BACKUP_DIR/backup.log"    # file log
 LIST_FILE="$BACKUP_DIR/daftar_file.txt"  # daftar hasil find
