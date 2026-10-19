@@ -7,8 +7,7 @@
 #         mengompresinya menjadi satu file .tar.gz, lalu mencatatnya ke log.
 
 # ===== BAGIAN 1: variabel dan direktori tujuan =====
-NIM= "09011282530120"
-## NIM=$(cat "$(dirname "$0")/../nim.txt")   # baca NIM dari nim.txt di folder repo
+NIM=$(cat "$(dirname "$0")/../nim.txt")   # baca NIM dari nim.txt di folder repo
 BACKUP_DIR="$HOME/backup_$NIM"       # direktori tujuan backup
 LOG_FILE="$BACKUP_DIR/backup.log"    # file log
 LIST_FILE="$BACKUP_DIR/daftar_file.txt"  # daftar hasil find
